@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculadora">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="244dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Valor2txt">
+
+        <TextView
+            android:id="@+id/Operacaotxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operacao" />
+
+        <RadioButton
+            android:id="@+id/SomaRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Soma" />
+
+        <RadioButton
+            android:id="@+id/SubtracaoRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtracao" />
+
+        <RadioButton
+            android:id="@+id/MultiplicacaoRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiplicacao" />
+
+        <RadioButton
+            android:id="@+id/DivisaoRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Divisao" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/Valor1txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Valor 1"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055"
+        />
+
+    <EditText
+        android:id="@+id/Valor2txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Valor 2"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Valor1txt" />
+
+    <Button
+        android:id="@+id/CalcularBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
